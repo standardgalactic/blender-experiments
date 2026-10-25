@@ -1,0 +1,4 @@
+[
+  {"model":"gpt6_pilot","task":"007","script":"gpt6_pilot/007.py"},
+  {"model":"gpt6_pilot","task":"009","script":"gpt6_pilot/009.py"}
+]

@@ -1,0 +1,7 @@
+{
+  "id": "010",
+  "title": "helical_column",
+  "instruction": "Create a continuous helical curve with four turns and nonzero vertical extent.",
+  "geometry_test": "helix",
+  "expected_count": 1
+}

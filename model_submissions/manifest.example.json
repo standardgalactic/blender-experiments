@@ -1,0 +1,13 @@
+[
+  {
+    "model": "candidate_a",
+    "task": "001",
+    "script": "candidate_a/001.py",
+    "repair": "candidate_a/001_fix.py"
+  },
+  {
+    "model": "candidate_b",
+    "task": "001",
+    "script": "candidate_b/001.py"
+  }
+]

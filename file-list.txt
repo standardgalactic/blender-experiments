@@ -1,0 +1,266 @@
+.
+├── LOCAL-OLLAMA.md
+├── README-pilot.md
+├── README.md
+├── calibration
+│   ├── README.md
+│   ├── negative
+│   │   ├── 007_uneven_posts.py
+│   │   ├── 009_solid_block.py
+│   │   └── 010_variable_pitch.py
+│   ├── report.csv
+│   ├── run.py
+│   └── run_blender_negatives.py
+├── file-list.txt
+├── harness
+│   ├── __pycache__
+│   │   ├── evaluate.cpython-312.pyc
+│   │   ├── evaluate.cpython-313.pyc
+│   │   ├── gallery.cpython-313.pyc
+│   │   ├── ollama_local.cpython-313.pyc
+│   │   ├── run.cpython-313.pyc
+│   │   ├── scene.cpython-313.pyc
+│   │   └── setup.cpython-312.pyc
+│   ├── evaluate.py
+│   ├── gallery.py
+│   ├── model_batch.py
+│   ├── ollama_local.py
+│   ├── run.py
+│   ├── scene.py
+│   └── setup.py
+├── index.html
+├── model_submissions
+│   ├── gpt6_pilot
+│   │   ├── 007.py
+│   │   └── 009.py
+│   ├── local_ollama
+│   │   ├── generation_failures.json
+│   │   ├── ollama_granite4.1_3b
+│   │   │   ├── 001.prompt.txt
+│   │   │   ├── 001.py
+│   │   │   ├── 001.raw.txt
+│   │   │   ├── 001.response.json
+│   │   │   ├── 007.prompt.txt
+│   │   │   ├── 007.py
+│   │   │   ├── 007.raw.txt
+│   │   │   └── 007.response.json
+│   │   └── ollama_granite4.1_8b
+│   │       ├── 001.prompt.txt
+│   │       ├── 001.py
+│   │       ├── 001.raw.txt
+│   │       ├── 001.response.json
+│   │       ├── 007.prompt.txt
+│   │       ├── 007.py
+│   │       ├── 007.raw.txt
+│   │       └── 007.response.json
+│   ├── manifest.example.json
+│   ├── manifest.json
+│   ├── manifest.local.json
+│   ├── manifest.pilot.json
+│   └── smoke_test
+│       └── 001.py
+├── results
+│   ├── baseline
+│   │   └── 001
+│   │       ├── execution.log
+│   │       ├── metrics.json
+│   │       ├── render.png
+│   │       ├── scene.blend
+│   │       └── scene.json
+│   ├── comparison.csv
+│   ├── gpt6_pilot
+│   │   ├── 007
+│   │   │   ├── execution.log
+│   │   │   ├── metrics.json
+│   │   │   ├── render.png
+│   │   │   ├── runner.log
+│   │   │   ├── scene.blend
+│   │   │   └── scene.json
+│   │   └── 009
+│   │       ├── execution.log
+│   │       ├── metrics.json
+│   │       ├── render.png
+│   │       ├── runner.log
+│   │       ├── scene.blend
+│   │       └── scene.json
+│   ├── negative_control
+│   │   ├── 007
+│   │   │   ├── execution.log
+│   │   │   ├── metrics.json
+│   │   │   ├── render.png
+│   │   │   ├── scene.blend
+│   │   │   ├── scene.blend1
+│   │   │   └── scene.json
+│   │   ├── 009
+│   │   │   ├── execution.log
+│   │   │   ├── metrics.json
+│   │   │   ├── render.png
+│   │   │   ├── scene.blend
+│   │   │   ├── scene.blend1
+│   │   │   └── scene.json
+│   │   └── 010
+│   │       ├── execution.log
+│   │       ├── metrics.json
+│   │       ├── render.png
+│   │       ├── scene.blend
+│   │       ├── scene.blend1
+│   │       └── scene.json
+│   ├── ollama_granite4.1_3b
+│   │   ├── 001
+│   │   │   ├── error.txt
+│   │   │   ├── execution.log
+│   │   │   └── runner.log
+│   │   └── 007
+│   │       ├── error.txt
+│   │       ├── execution.log
+│   │       └── runner.log
+│   ├── ollama_granite4.1_8b
+│   │   ├── 001
+│   │   │   ├── error.txt
+│   │   │   ├── execution.log
+│   │   │   └── runner.log
+│   │   └── 007
+│   │       ├── error.txt
+│   │       ├── execution.log
+│   │       └── runner.log
+│   ├── reference
+│   │   ├── 001
+│   │   │   ├── execution.log
+│   │   │   ├── metrics.json
+│   │   │   ├── render.png
+│   │   │   ├── scene.blend
+│   │   │   ├── scene.blend1
+│   │   │   └── scene.json
+│   │   ├── 002
+│   │   │   ├── execution.log
+│   │   │   ├── metrics.json
+│   │   │   ├── render.png
+│   │   │   ├── scene.blend
+│   │   │   ├── scene.blend1
+│   │   │   └── scene.json
+│   │   ├── 003
+│   │   │   ├── execution.log
+│   │   │   ├── metrics.json
+│   │   │   ├── render.png
+│   │   │   ├── scene.blend
+│   │   │   ├── scene.blend1
+│   │   │   └── scene.json
+│   │   ├── 004
+│   │   │   ├── execution.log
+│   │   │   ├── metrics.json
+│   │   │   ├── render.png
+│   │   │   ├── scene.blend
+│   │   │   ├── scene.blend1
+│   │   │   └── scene.json
+│   │   ├── 005
+│   │   │   ├── execution.log
+│   │   │   ├── metrics.json
+│   │   │   ├── render.png
+│   │   │   ├── scene.blend
+│   │   │   ├── scene.blend1
+│   │   │   └── scene.json
+│   │   ├── 006
+│   │   │   ├── execution.log
+│   │   │   ├── metrics.json
+│   │   │   ├── render.png
+│   │   │   ├── scene.blend
+│   │   │   ├── scene.blend1
+│   │   │   └── scene.json
+│   │   ├── 007
+│   │   │   ├── execution.log
+│   │   │   ├── metrics.json
+│   │   │   ├── render.png
+│   │   │   ├── scene.blend
+│   │   │   ├── scene.blend1
+│   │   │   └── scene.json
+│   │   ├── 008
+│   │   │   ├── execution.log
+│   │   │   ├── metrics.json
+│   │   │   ├── render.png
+│   │   │   ├── scene.blend
+│   │   │   ├── scene.blend1
+│   │   │   └── scene.json
+│   │   ├── 009
+│   │   │   ├── execution.log
+│   │   │   ├── metrics.json
+│   │   │   ├── render.png
+│   │   │   ├── scene.blend
+│   │   │   ├── scene.blend1
+│   │   │   └── scene.json
+│   │   ├── 010
+│   │   │   ├── execution.log
+│   │   │   ├── metrics.json
+│   │   │   ├── render.png
+│   │   │   ├── scene.blend
+│   │   │   ├── scene.blend1
+│   │   │   └── scene.json
+│   │   ├── 011
+│   │   │   ├── error.txt
+│   │   │   ├── execution.log
+│   │   │   ├── metrics.json
+│   │   │   ├── render.png
+│   │   │   ├── scene.blend
+│   │   │   ├── scene.blend1
+│   │   │   └── scene.json
+│   │   ├── 012
+│   │   │   ├── error.txt
+│   │   │   ├── execution.log
+│   │   │   ├── metrics.json
+│   │   │   ├── render.png
+│   │   │   ├── scene.blend
+│   │   │   ├── scene.blend1
+│   │   │   └── scene.json
+│   │   └── 013
+│   │       ├── error.txt
+│   │       ├── execution.log
+│   │       ├── metrics.json
+│   │       ├── render.png
+│   │       ├── scene.blend
+│   │       ├── scene.blend1
+│   │       └── scene.json
+│   └── smoke_test
+│       └── 001
+│           ├── execution.log
+│           ├── metrics.json
+│           ├── render.png
+│           ├── runner.log
+│           ├── scene.blend
+│           └── scene.json
+├── scripts
+│   ├── __pycache__
+│   │   └── run_references.cpython-313.pyc
+│   ├── run_baseline.sh
+│   └── run_references.py
+├── submissions
+│   ├── baseline.py
+│   ├── reference_002.py
+│   ├── reference_003.py
+│   ├── reference_004.py
+│   ├── reference_005.py
+│   ├── reference_006.py
+│   ├── reference_007.py
+│   ├── reference_008.py
+│   ├── reference_009.py
+│   ├── reference_010.py
+│   ├── reference_011.py
+│   ├── reference_012.py
+│   └── reference_013.py
+├── tasks
+│   ├── 001_primitive_assembly.json
+│   ├── 002_coordinate_transformations.json
+│   ├── 003_symmetric_construction.json
+│   ├── 004_parametric_staircase.json
+│   ├── 005_tower_with_crossbar.json
+│   ├── 006_stepped_pyramid.json
+│   ├── 007_radial_array.json
+│   ├── 008_curved_arch.json
+│   ├── 009_boolean_aperture.json
+│   ├── 010_helical_column.json
+│   ├── 011_preserve_and_extend.json
+│   ├── 012_repair_misaligned_pair.json
+│   └── 013_repair_staircase.json
+├── tests
+└── viewer
+    └── template.html
+
+49 directories, 215 files

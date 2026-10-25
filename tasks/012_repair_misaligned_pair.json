@@ -1,0 +1,37 @@
+{
+  "id": "012",
+  "title": "repair_misaligned_pair",
+  "instruction": "Correct the RightSupport position without moving or resizing LeftSupport.",
+  "setup": "supports",
+  "expected": [
+    {
+      "name": "LeftSupport",
+      "type": "MESH",
+      "location": [
+        -2,
+        0,
+        1.5
+      ],
+      "dimensions": [
+        0.5,
+        0.5,
+        3
+      ]
+    },
+    {
+      "name": "RightSupport",
+      "type": "MESH",
+      "location": [
+        2,
+        0,
+        1.5
+      ],
+      "dimensions": [
+        0.5,
+        0.5,
+        3
+      ]
+    }
+  ],
+  "preserve_unmodified": true
+}

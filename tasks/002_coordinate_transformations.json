@@ -1,0 +1,49 @@
+{
+  "id": "002",
+  "title": "coordinate_transformations",
+  "instruction": "Place three named cubes at the given world positions, each with unit dimensions.",
+  "expected": [
+    {
+      "name": "A",
+      "type": "MESH",
+      "location": [
+        2,
+        0,
+        0
+      ],
+      "dimensions": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "B",
+      "type": "MESH",
+      "location": [
+        0,
+        3,
+        0
+      ],
+      "dimensions": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "C",
+      "type": "MESH",
+      "location": [
+        -2,
+        -1,
+        1
+      ],
+      "dimensions": [
+        1,
+        1,
+        1
+      ]
+    }
+  ]
+}

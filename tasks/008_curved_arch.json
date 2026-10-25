@@ -1,0 +1,7 @@
+{
+  "id": "008",
+  "title": "curved_arch",
+  "instruction": "Create an arch using a mesh of at least 12 vertices, with its center elevated above its endpoints.",
+  "geometry_test": "arch",
+  "expected_count": 1
+}

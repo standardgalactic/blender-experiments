@@ -1,0 +1,51 @@
+{
+  "id": "011",
+  "title": "preserve_and_extend",
+  "instruction": "Preserve the original Anchor object unchanged, then add a Bridge and a Terminal at specified coordinates.",
+  "setup": "anchor",
+  "expected": [
+    {
+      "name": "Anchor",
+      "type": "MESH",
+      "location": [
+        0,
+        0,
+        0.5
+      ],
+      "dimensions": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Bridge",
+      "type": "MESH",
+      "location": [
+        1.5,
+        0,
+        1
+      ],
+      "dimensions": [
+        2,
+        0.5,
+        0.4
+      ]
+    },
+    {
+      "name": "Terminal",
+      "type": "MESH",
+      "location": [
+        3,
+        0,
+        0.5
+      ],
+      "dimensions": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "preserve_unmodified": true
+}

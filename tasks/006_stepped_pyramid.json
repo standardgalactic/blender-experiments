@@ -1,0 +1,63 @@
+{
+  "id": "006",
+  "title": "stepped_pyramid",
+  "instruction": "Build four centered square tiers as separate named meshes.",
+  "expected": [
+    {
+      "name": "Tier_00",
+      "type": "MESH",
+      "location": [
+        0,
+        0,
+        0.25
+      ],
+      "dimensions": [
+        4.0,
+        4.0,
+        0.5
+      ]
+    },
+    {
+      "name": "Tier_01",
+      "type": "MESH",
+      "location": [
+        0,
+        0,
+        0.75
+      ],
+      "dimensions": [
+        3.25,
+        3.25,
+        0.5
+      ]
+    },
+    {
+      "name": "Tier_02",
+      "type": "MESH",
+      "location": [
+        0,
+        0,
+        1.25
+      ],
+      "dimensions": [
+        2.5,
+        2.5,
+        0.5
+      ]
+    },
+    {
+      "name": "Tier_03",
+      "type": "MESH",
+      "location": [
+        0,
+        0,
+        1.75
+      ],
+      "dimensions": [
+        1.75,
+        1.75,
+        0.5
+      ]
+    }
+  ]
+}

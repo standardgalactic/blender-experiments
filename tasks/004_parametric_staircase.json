@@ -1,0 +1,77 @@
+{
+  "id": "004",
+  "title": "parametric_staircase",
+  "instruction": "Build five individually named steps, each 2 units wide and 0.4 high, rising along Y.",
+  "expected": [
+    {
+      "name": "Step_00",
+      "type": "MESH",
+      "location": [
+        0,
+        0.0,
+        0.2
+      ],
+      "dimensions": [
+        2,
+        0.7,
+        0.4
+      ]
+    },
+    {
+      "name": "Step_01",
+      "type": "MESH",
+      "location": [
+        0,
+        0.7,
+        0.4
+      ],
+      "dimensions": [
+        2,
+        0.7,
+        0.4
+      ]
+    },
+    {
+      "name": "Step_02",
+      "type": "MESH",
+      "location": [
+        0,
+        1.4,
+        0.6000000000000001
+      ],
+      "dimensions": [
+        2,
+        0.7,
+        0.4
+      ]
+    },
+    {
+      "name": "Step_03",
+      "type": "MESH",
+      "location": [
+        0,
+        2.0999999999999996,
+        0.8
+      ],
+      "dimensions": [
+        2,
+        0.7,
+        0.4
+      ]
+    },
+    {
+      "name": "Step_04",
+      "type": "MESH",
+      "location": [
+        0,
+        2.8,
+        1.0
+      ],
+      "dimensions": [
+        2,
+        0.7,
+        0.4
+      ]
+    }
+  ]
+}

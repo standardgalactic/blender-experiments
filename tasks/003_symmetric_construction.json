@@ -1,0 +1,49 @@
+{
+  "id": "003",
+  "title": "symmetric_construction",
+  "instruction": "Construct a central beam and symmetric pillars.",
+  "expected": [
+    {
+      "name": "Beam",
+      "type": "MESH",
+      "location": [
+        0,
+        0,
+        3
+      ],
+      "dimensions": [
+        6,
+        1,
+        0.5
+      ]
+    },
+    {
+      "name": "Left",
+      "type": "MESH",
+      "location": [
+        -2.5,
+        0,
+        1.5
+      ],
+      "dimensions": [
+        0.5,
+        0.5,
+        3
+      ]
+    },
+    {
+      "name": "Right",
+      "type": "MESH",
+      "location": [
+        2.5,
+        0,
+        1.5
+      ],
+      "dimensions": [
+        0.5,
+        0.5,
+        3
+      ]
+    }
+  ]
+}

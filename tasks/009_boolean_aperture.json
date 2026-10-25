@@ -1,0 +1,7 @@
+{
+  "id": "009",
+  "title": "boolean_aperture",
+  "instruction": "Create a solid block with a through-hole using a Boolean difference modifier applied to its mesh.",
+  "geometry_test": "boolean",
+  "expected_count": 1
+}

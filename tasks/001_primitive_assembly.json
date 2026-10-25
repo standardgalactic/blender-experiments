@@ -1,0 +1,49 @@
+{
+  "id": "001",
+  "title": "primitive_assembly",
+  "instruction": "Construct three named primitives with specified dimensions and locations.",
+  "expected": [
+    {
+      "name": "Base",
+      "type": "MESH",
+      "location": [
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        4,
+        4,
+        1
+      ]
+    },
+    {
+      "name": "Column",
+      "type": "MESH",
+      "location": [
+        0,
+        0,
+        1.5
+      ],
+      "dimensions": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Cap",
+      "type": "MESH",
+      "location": [
+        0,
+        0,
+        2.75
+      ],
+      "dimensions": [
+        2,
+        2,
+        0.5
+      ]
+    }
+  ]
+}

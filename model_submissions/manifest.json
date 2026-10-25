@@ -1,0 +1,7 @@
+[
+  {
+    "model": "smoke_test",
+    "task": "001",
+    "script": "smoke_test/001.py"
+  }
+]

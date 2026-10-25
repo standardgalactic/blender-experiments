@@ -1,0 +1,49 @@
+{
+  "id": "005",
+  "title": "tower_with_crossbar",
+  "instruction": "Build two vertical supports and a horizontal crossbar, retaining separate meshes.",
+  "expected": [
+    {
+      "name": "Support_L",
+      "type": "MESH",
+      "location": [
+        -2,
+        0,
+        1.5
+      ],
+      "dimensions": [
+        0.5,
+        0.5,
+        3
+      ]
+    },
+    {
+      "name": "Support_R",
+      "type": "MESH",
+      "location": [
+        2,
+        0,
+        1.5
+      ],
+      "dimensions": [
+        0.5,
+        0.5,
+        3
+      ]
+    },
+    {
+      "name": "Crossbar",
+      "type": "MESH",
+      "location": [
+        0,
+        0,
+        3.25
+      ],
+      "dimensions": [
+        4.5,
+        0.6,
+        0.5
+      ]
+    }
+  ]
+}

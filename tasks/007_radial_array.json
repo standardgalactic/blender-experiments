@@ -1,0 +1,7 @@
+{
+  "id": "007",
+  "title": "radial_array",
+  "instruction": "Create eight distinct posts on a circle of radius 3 in the XY plane.",
+  "geometry_test": "radial",
+  "expected_count": 8
+}
