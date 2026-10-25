@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "object": "Beam",
+      "pass": true,
+      "reason": ""
+    },
+    {
+      "object": "Left",
+      "pass": true,
+      "reason": ""
+    },
+    {
+      "object": "Right",
+      "pass": true,
+      "reason": ""
+    }
+  ]
+}

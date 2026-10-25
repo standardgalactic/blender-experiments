@@ -1,0 +1,10 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "object": "boolean",
+      "pass": false,
+      "reason": "geometry constraint failed"
+    }
+  ]
+}

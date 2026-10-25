@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "object": "Tier_00",
+      "pass": true,
+      "reason": ""
+    },
+    {
+      "object": "Tier_01",
+      "pass": true,
+      "reason": ""
+    },
+    {
+      "object": "Tier_02",
+      "pass": true,
+      "reason": ""
+    },
+    {
+      "object": "Tier_03",
+      "pass": true,
+      "reason": ""
+    }
+  ]
+}

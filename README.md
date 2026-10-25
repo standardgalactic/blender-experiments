@@ -68,3 +68,33 @@ The model comparison runner does **not** generate scripts or call an AI model. O
 Run `python3 harness/model_batch.py model_submissions/manifest.json --timeout 180` to evaluate the initial attempts. Add `--repair` to run optional repair scripts for tasks whose first attempt fails. A repair script is executed after the original submission in a fresh Blender session, not on a persisted failed `.blend` file. Therefore, this is a two-stage script correction test, **not yet** a test of a model receiving diagnostic feedback or editing an existing `.blend` artifact. Do not supply the reference scripts as candidate submissions when reporting model performance.
 
 Outputs are written to `results/<model>/<task>/` and `results/<model>__repair/<task>/` (for repairs), and the machine-readable comparison is `results/comparison.csv`. The gallery is refreshed automatically. The batch process exits nonzero when any initial attempt fails, even if its repair succeeds; consult the CSV for the separate repair outcomes. The runner enforces a per-attempt timeout and clears stale artifacts for the specific attempt being rerun. It never deletes reference results. Python submissions are executable code and should only be run from trusted models or inside a sandbox with restricted filesystem and network permissions.
+
+## Render Gallery
+
+The following scenes were generated and evaluated using headless Blender.
+
+| Primitive Assembly | Radial Array | Boolean Aperture |
+|:---:|:---:|:---:|
+| ![Primitive assembly](results/reference/001/render.png) | ![Radial array](results/reference/007/render.png) | ![Boolean aperture](results/reference/009/render.png) |
+| Task 001 | Task 007 | Task 009 |
+
+### Local Model Experiments
+
+The repository includes generated Python scripts, original prompts,
+raw model responses, execution diagnostics, and evaluation results
+from locally running Granite models through Ollama.
+
+Initial experiments use:
+
+- `granite4.1:3b`
+- `granite4.1:8b`
+
+Results are preserved even when generated scripts fail to execute
+or produce geometrically incorrect constructions.
+
+These are exploratory experiments, not claims of comparative model
+performance. Early trials exposed incomplete task prompts and Blender
+API incompatibilities, which are being corrected in subsequent runs.
+
+See `model_submissions/local_ollama/` for the generated code and
+`results/` for the evaluation artifacts.

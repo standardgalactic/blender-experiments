@@ -1,0 +1,20 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "object": "Base",
+      "pass": false,
+      "reason": "missing"
+    },
+    {
+      "object": "Column",
+      "pass": false,
+      "reason": "missing"
+    },
+    {
+      "object": "Cap",
+      "pass": false,
+      "reason": "missing"
+    }
+  ]
+}

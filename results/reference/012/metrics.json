@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "object": "LeftSupport",
+      "pass": true,
+      "reason": ""
+    },
+    {
+      "object": "RightSupport",
+      "pass": true,
+      "reason": ""
+    },
+    {
+      "object": "LeftSupport preservation",
+      "pass": true,
+      "reason": ""
+    }
+  ]
+}

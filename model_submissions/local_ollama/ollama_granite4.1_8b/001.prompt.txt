@@ -1,0 +1,3 @@
+Write a complete executable Blender Python script for Blender background mode. Return ONLY Python code, no explanation or markdown. Import bpy. Clear the default scene before constructing objects. Do not render, save files, or set a camera: the harness does that. Use the exact object names specified in the task if provided.
+
+Task: Construct three named primitives with specified dimensions and locations.

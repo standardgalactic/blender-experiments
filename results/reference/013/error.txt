@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/bonobo/blender-experiments/harness/scene.py", line 12, in main
+    from setup import build
+ModuleNotFoundError: No module named 'setup'

@@ -1,0 +1,37 @@
+Write a complete executable Blender Python script for Blender background mode. Return ONLY Python code, no explanation or markdown. Import bpy. Remove existing scene objects using bpy.data.objects.remove(obj, do_unlink=True) if necessary. Do not call read_factory_settings. Do not render, save files, or set a camera: the harness does that. Use the exact object names specified in the task if provided.
+
+Task: Construct three named primitives with specified dimensions and locations.
+
+
+Use the following verified Blender API reference when writing the script:
+
+Blender 4.0 Python API reference
+
+Import Blender with:
+import bpy
+import math
+
+The execution harness provides an initialized Blender scene.
+Do not call bpy.ops.wm.read_factory_settings().
+Do not call bpy.ops.wm.open_mainfile().
+Do not save or render the scene. The harness handles both.
+
+Valid primitive creation operators:
+bpy.ops.mesh.primitive_cube_add(size=2.0, location=(0,0,0))
+bpy.ops.mesh.primitive_uv_sphere_add(segments=32, ring_count=16, radius=1.0, location=(0,0,0))
+bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=2, radius=1.0)
+bpy.ops.mesh.primitive_cylinder_add(vertices=32, radius=1.0, depth=2.0)
+bpy.ops.mesh.primitive_cone_add(vertices=32, radius1=1.0, radius2=0.0, depth=2.0)
+bpy.ops.mesh.primitive_torus_add(major_radius=1.0, minor_radius=0.25)
+
+After creating an object:
+obj = bpy.context.object
+obj.name = "DescriptiveName"
+obj.location = (1.0, 2.0, 3.0)
+obj.rotation_euler = (0.0, 0.0, 0.0)
+obj.scale = (1.0, 1.0, 1.0)
+
+For repeated objects, use Python loops and math.sin/math.cos.
+For exact geometry, calculate positions numerically.
+Use only valid bpy.ops.mesh operators.
+Output executable Python code, not Markdown.

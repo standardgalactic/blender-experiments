@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "object": "radial",
+      "pass": true,
+      "reason": ""
+    }
+  ]
+}

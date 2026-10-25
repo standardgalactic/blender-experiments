@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "object": "A",
+      "pass": true,
+      "reason": ""
+    },
+    {
+      "object": "B",
+      "pass": true,
+      "reason": ""
+    },
+    {
+      "object": "C",
+      "pass": true,
+      "reason": ""
+    }
+  ]
+}

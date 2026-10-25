@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "object": "Anchor",
+      "pass": true,
+      "reason": ""
+    },
+    {
+      "object": "Bridge",
+      "pass": true,
+      "reason": ""
+    },
+    {
+      "object": "Terminal",
+      "pass": true,
+      "reason": ""
+    },
+    {
+      "object": "Anchor preservation",
+      "pass": true,
+      "reason": ""
+    }
+  ]
+}

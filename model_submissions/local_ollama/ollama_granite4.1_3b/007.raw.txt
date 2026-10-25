@@ -1,0 +1,20 @@
+import bpy
+import math
+
+# Clear default scene
+bpy.ops.object.delete(use_region=True)
+
+# Define parameters
+radius = 3
+num_posts = 8
+
+# Create posts on a circle in the XY plane
+for i in range(num_posts):
+    angle = (2 * math.pi / num_posts) * i
+    x = radius * math.cos(angle)
+    y = radius * math.sin(angle)
+    z = 0.0  # Assuming all posts are at ground level
+
+    # Create a new cylinder for each post
+    bpy.ops.mesh.primitive_cylinder_add(radius=0.5, depth=1.0, location=(x, y, z))
+    bpy.context.object.name = f"Post_{i+1}"

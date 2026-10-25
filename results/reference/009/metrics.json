@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "object": "boolean",
+      "pass": true,
+      "reason": ""
+    }
+  ]
+}

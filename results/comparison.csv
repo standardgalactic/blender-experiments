@@ -1,0 +1,2 @@
+model,task,attempt,status,passed,checks_passed,checks_total,seconds,script,result_dir
+ollama_granite4.1_3b_guided_fullspec,001,initial,failed,False,0,3,4.328,/home/bonobo/blender-experiments/model_submissions/local_ollama/ollama_granite4.1_3b_guided_fullspec/001.py,results/ollama_granite4.1_3b_guided_fullspec/001

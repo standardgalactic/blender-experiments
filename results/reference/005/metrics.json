@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "object": "Support_L",
+      "pass": true,
+      "reason": ""
+    },
+    {
+      "object": "Support_R",
+      "pass": true,
+      "reason": ""
+    },
+    {
+      "object": "Crossbar",
+      "pass": true,
+      "reason": ""
+    }
+  ]
+}

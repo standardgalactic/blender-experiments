@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/bonobo/blender-experiments/harness/scene.py", line 24, in main
+    exec(compile(submission.read_text(),str(submission),"exec"),{"__name__":"__main__","bpy":bpy})
+  File "/home/bonobo/blender-experiments/model_submissions/local_ollama/ollama_granite4.1_8b/001.py", line 13, in <module>
+    bpy.ops.sphere.add(radius=1.5, location=(3, 0, 0))
+  File "/usr/share/blender/scripts/modules/bpy/ops.py", line 109, in __call__
+    ret = _op_call(self.idname_py(), kw)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: Calling operator "bpy.ops.sphere.add" error, could not be found

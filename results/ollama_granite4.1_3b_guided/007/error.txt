@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/bonobo/blender-experiments/harness/scene.py", line 24, in main
+    exec(compile(submission.read_text(),str(submission),"exec"),{"__name__":"__main__","bpy":bpy})
+  File "/home/bonobo/blender-experiments/model_submissions/local_ollama/ollama_granite4.1_3b_guided/007.py", line 27, in <module>
+    bpy.ops.mesh.primitive_uv_sphere_add(
+  File "/usr/share/blender/scripts/modules/bpy/ops.py", line 109, in __call__
+    ret = _op_call(self.idname_py(), kw)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Converting py args to operator properties: : keyword "size" unrecognized

@@ -1,0 +1,7 @@
+[
+  {
+    "model": "ollama_granite4.1_3b_guided_fullspec",
+    "task": "001",
+    "script": "local_ollama/ollama_granite4.1_3b_guided_fullspec/001.py"
+  }
+]

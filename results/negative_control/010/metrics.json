@@ -1,0 +1,10 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "object": "helix",
+      "pass": false,
+      "reason": "geometry constraint failed"
+    }
+  ]
+}

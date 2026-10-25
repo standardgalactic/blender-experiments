@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/bonobo/blender-experiments/harness/scene.py", line 24, in main
+    exec(compile(submission.read_text(),str(submission),"exec"),{"__name__":"__main__","bpy":bpy})
+  File "/home/bonobo/blender-experiments/model_submissions/local_ollama/ollama_granite4.1_3b/001.py", line 3, in <module>
+    bpy.context.scene.world.background_image.enable = False
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'background_image'

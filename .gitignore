@@ -3,21 +3,15 @@ __pycache__/
 *.py[cod]
 .venv/
 
-# Blender
+# Blender scene files
 *.blend
 *.blend1
 *.blend2
-
-# Generated experiment outputs
-results/
-index.html
-model_submissions/local_ollama/
-model_submissions/manifest.local.json
-
-# Generated reports
-calibration/report.csv
 
 # Temporary files
 *.log
 *.bak
 *~
+
+# Local machine configuration
+.env
